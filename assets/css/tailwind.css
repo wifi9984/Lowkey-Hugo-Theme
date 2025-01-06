@@ -215,7 +215,7 @@
   }
   
   header nav > ul {
-    @apply flex flex-wrap justify-center uppercase text-xs font-semibold gap-7;
+    @apply flex flex-wrap uppercase text-xs font-semibold gap-7;
   }
   
   nav a, footer a {
@@ -234,7 +234,7 @@
   
   /* Content overrides */
   #content {
-    @apply leading-normal;
+    @apply leading-relaxed;
   }
 
   #content a {
