@@ -167,7 +167,7 @@
   }
   
   blockquote {
-    @apply text-xl text-gray-500 dark:text-gray-400 italic border-l-4 border-gray-300 dark:border-gray-700 pl-4 mb-5;
+    @apply text-lg text-gray-500 dark:text-gray-400 italic border-l-4 border-gray-300 dark:border-gray-700 pl-4 mb-5;
   }
   
   ul, ol {
