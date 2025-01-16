@@ -2,6 +2,7 @@
 {{- $baseurl := .Site.BaseURL -}}
 {{- $items := .Site.RegularPages -}}
 {{- $pubDate := time.Now.Format "Mon, 02 Jan 2006 15:04:05 MST" -}}
+{{- $avatar := resources.GetMatch .Site.Params.avatar -}} 
 
 {{- /* RSS Feed Template */ -}}
 <rss version="2.0">
@@ -11,6 +12,11 @@
     <description>{{ or .Site.Params.description .Site.Title }}</description>
     <language>{{ .Site.Language.Lang }}</language>
     <pubDate>{{ $pubDate }}</pubDate>
+    <image> 
+      <url>{{ $avatar.Permalink }}</url> 
+      <title>{{ .Site.Title }}</title> 
+      <link>{{ $baseurl }}</link>
+    </image>
     {{ range $items }}
       <item>
         <title>{{ .Title }}</title>
